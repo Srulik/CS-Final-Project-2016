@@ -19,8 +19,30 @@ public class Game() extends Application{
     
     Label label = new Label();
     label.setText("How are you feeling right now?")
-    Button button1 = new Button("Happy");
-    Button 
+    Button joy = new Button("Joy");
+    joy.setOnAction(e -> {
+			
+		});
+    
+    Button sad = new Button("Sad");
+    sad.setOnAction(e -> {
+			
+		});
+		
+    Button fear = new Button("Fear");
+    fear.setOnAction(e -> {
+			
+		});
+		
+    Button disgust = new Button("Disgust");
+    disgust.setOnAction(e -> {
+			
+		});
+		
+    Button anger = new Button("Anger");
+    anger.setOnAction(e -> {
+			
+		});
   }
   
 }
