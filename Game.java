@@ -7,5 +7,12 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class Game() extends Application{
+  public static void main(String[] args){
+    
+  }
+  
+  public void start(Stage p){
+    
+  }
   
 }
