@@ -8,11 +8,19 @@ import javafx.stage.Stage;
 
 public class Game() extends Application{
   public static void main(String[] args){
-    launch(args);
+    
   }
   
-  public void start(){
+  public void start(Stage p){
+    Stage window = new Stage();
+    window.setTitle("Game");
+    window.setMinWidth(300);
+    window.setMinHeight(400);
     
+    Label label = new Label();
+    label.setText("How are you feeling right now?")
+    Button button1 = new Button("Happy");
+    Button 
   }
   
 }
