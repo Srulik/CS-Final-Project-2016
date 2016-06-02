@@ -6,4 +6,16 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public static
+
+public class JoyClass extends Application{
+  public static void main(String[] args){
+  
+  }
+
+  public void start(Stage p){
+  
+  }
+
+}
+
+
