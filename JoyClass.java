@@ -12,9 +12,11 @@ public class JoyClass() extends Application{
     launch(args);
   }
 
-  public void start(Stage p){
+  public void start(){
     Stage window = new Stage();
-    window = p;
+    window.setTitle("Joy!");
+    window.setWidth(300);
+    window.setHeight(400);
     
     Label message = new Label("You are now happy ! Have a nice day :)");
     Button exit = new Button("EXIT");
