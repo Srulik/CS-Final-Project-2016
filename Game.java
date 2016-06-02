@@ -11,7 +11,7 @@ public class Game() extends Application{
     launch(args);
   }
   
-  public void start(Stage p){
+  public void start(){
     
   }
   
