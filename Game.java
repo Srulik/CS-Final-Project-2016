@@ -6,5 +6,6 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class Game(){
+public class Game() extends Application{
+  
 }
