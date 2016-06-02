@@ -13,6 +13,13 @@ public class JoyClass extends Application{
   }
 
   public void start(Stage p){
+    Stage window = new Stage();
+    window = p;
+    
+    Label message = new Label("You are now happy ! Have a nice day :)");
+    Button exit = new Button("EXIT");
+    
+    
   
   }
 
