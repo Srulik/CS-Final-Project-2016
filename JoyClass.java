@@ -18,7 +18,7 @@ public class JoyClass extends Application{
     
     Label message = new Label("You are now happy ! Have a nice day :)");
     Button exit = new Button("EXIT");
-    
+    exit.setOnAction(e -> window.close());
     
   
   }
