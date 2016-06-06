@@ -22,8 +22,11 @@ public class AngerClass() extends Application{
     Button anger = new Button("HIT ME I DARE YOU");
     anger.setOnAction( e -> numAng++ );
     
-    Button exit = new Button("EXIT");
-    exit.setOnAction(e -> window.close());
+    if(numANg >= 100){
+      Button exit = new Button("EXIT");
+      exit.setOnAction(e -> window.close());
+    }
+    
     
     window.show();
     
