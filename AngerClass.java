@@ -11,5 +11,18 @@ public class AngerClass() extends Application{
   public static void main(String[] args){
     launch(args);
   }
-
+  
+  public void start(){
+    Stage window = new Stage();
+    window.setTitle("Anger!");
+    window.setWidth(300);
+    window.setHeight(400);
+    
+    window.show();
+    
+    
+    Label message = new Label("You are now happy ! Have a nice day :)");
+    Button exit = new Button("EXIT");
+    exit.setOnAction(e -> window.close());
+  }
 }
