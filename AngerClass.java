@@ -18,11 +18,14 @@ public class AngerClass() extends Application{
     window.setWidth(300);
     window.setHeight(400);
     
+    Button anger = new Button("HIT ME I DARE YOU");
+    
+    Button exit = new Button("EXIT");
+    exit.setOnAction(e -> window.close());
+    
     window.show();
     
     
-    Label message = new Label("You are now happy ! Have a nice day :)");
-    Button exit = new Button("EXIT");
-    exit.setOnAction(e -> window.close());
+    
   }
 }
