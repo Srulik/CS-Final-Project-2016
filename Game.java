@@ -23,27 +23,27 @@ public class Game() extends Application{
     label.setText("How are you feeling right now?")
     Button joy = new Button("Joy");
     joy.setOnAction(e -> {
-			
+	JoyClass.start();		
 		});
     
     Button sad = new Button("Sad");
     sad.setOnAction(e -> {
-			
+	SadClass.start();		
 		});
 		
     Button fear = new Button("Fear");
     fear.setOnAction(e -> {
-			
+	FearClass.start();		
 		});
 		
     Button disgust = new Button("Disgust");
     disgust.setOnAction(e -> {
-			
+	DisgustClass.start();		
 		});
 		
     Button anger = new Button("Anger");
     anger.setOnAction(e -> {
-			
+	AngerClass.start();		
 		});
   }
   
