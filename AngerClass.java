@@ -17,8 +17,10 @@ public class AngerClass() extends Application{
     window.setTitle("Anger!");
     window.setWidth(300);
     window.setHeight(400);
+    int numAng = 0;
     
     Button anger = new Button("HIT ME I DARE YOU");
+    anger.setOnAction( e -> numAng++ );
     
     Button exit = new Button("EXIT");
     exit.setOnAction(e -> window.close());
