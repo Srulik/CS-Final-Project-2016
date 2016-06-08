@@ -21,6 +21,13 @@ public class JoyClass() extends Application{
     Label message = new Label("You are now happy ! Have a nice day :)");
     Button exit = new Button("EXIT");
     exit.setOnAction(e -> window.close());
+    
+    VBox a = new VBox(500);
+    a.getChildren.addAll(message, exit);
+    
+    Scene scene = new Scene(a, 600,600);
+    window.setScene(scene);
+    window.show();
   }
 
 }
