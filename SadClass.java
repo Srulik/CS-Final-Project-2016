@@ -18,7 +18,7 @@ public class SadClass() extends Application{
     window.setWidth(300);
     window.setHeight(400);
     
-    Button sad = new Button("Wanna watch this video?");
+    Button sad = new Button("Watch this video; it'll make your day better :)");
     disgust.setOnAction( e -> );
     a.getChildren().add(sad);
     
