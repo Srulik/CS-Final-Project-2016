@@ -1,18 +1,26 @@
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.Slider;
+import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 
-public class AngerClass() extends Application{
-  public static void main(String[] args){
-    launch(args);
-  }
+public class AngerClass extends Game{
   
-  public void start(){
+  public static void startAnger(){
     Stage window = new Stage();
     window.setTitle("Anger!");
     window.setWidth(300);
@@ -22,14 +30,15 @@ public class AngerClass() extends Application{
     VBox a = new VBox(50);
     
     Button anger = new Button("HIT ME I DARE YOU");
+    /*
     anger.setOnAction( e -> numAng++ );
     a.getChildren().add(anger);
-    
-    if(numANg >= 100){
+    */
+    //if(numAng >= 100){
       Button exit = new Button("EXIT");
       exit.setOnAction(e -> window.close());
-      a.getChildren().add(exit);
-    }
+      a.getChildren().addAll(anger, exit);
+    //}
     
     Scene scene = new Scene(a, 600, 600);
     window.setScene(scene);
@@ -38,4 +47,5 @@ public class AngerClass() extends Application{
     
     
   }
+	
 }
