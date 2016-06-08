@@ -12,6 +12,4 @@ public class DisgustClass() extends Application{
     launch(args);
   }
   
-  //https://www.youtube.com/watch?v=XM9pmmrKXKA
-  
 }
