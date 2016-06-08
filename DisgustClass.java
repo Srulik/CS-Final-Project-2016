@@ -19,15 +19,12 @@ public class DisgustClass() extends Application{
     window.setWidth(300);
     window.setHeight(400);
     
-    int num = 0;
-    
     Button disgust = new Button("Wanna watch this video?");
-    disgust.setOnAction( e -> https://www.youtube.com/watch?v=XM9pmmrKXKA);
+    disgust.setOnAction( e -> /*https://www.youtube.com/watch?v=XM9pmmrKXKA*/);
     
-    if(num == 1){
-      Button exit = new Button("EXIT");
-      exit.setOnAction(e -> window.close());
-    }
+    Button exit = new Button("EXIT");
+    exit.setOnAction(e -> window.close());
+    a.getChildren().add(exit);
     
     MediaPlayer play - new MediaPlayer()
     
