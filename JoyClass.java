@@ -22,7 +22,7 @@ public class JoyClass() extends Application{
     Button exit = new Button("EXIT");
     exit.setOnAction(e -> window.close());
     
-    VBox a = new VBox(500);
+    VBox a = new VBox(50);
     a.getChildren.addAll(message, exit);
     
     Scene scene = new Scene(a, 600,600);
