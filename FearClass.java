@@ -14,15 +14,15 @@ public class FearClass() extends Application{
   
   public void start(){
     Stage window = new Stage();
-    window.setTitle("Sad...");
+    window.setTitle("Fear...>.<");
     window.setWidth(300);
     window.setHeight(400);
     
     VBox a = new VBox(50);
     
-    Button sad = new Button("Watch this video; it'll make your day better :)");
+    Button fear = new Button("Watch this video; you'll be happy again!");
     anger.setOnAction( e -> https://www.youtube.com/watch?v=-dxSqylZ5kM);
-    a.getChildren().add(sad);
+    a.getChildren().add(fear);
     
     Button exit = new Button("EXIT");
     exit.setOnAction(e -> window.close());
