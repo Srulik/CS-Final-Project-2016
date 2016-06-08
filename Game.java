@@ -45,6 +45,12 @@ public class Game() extends Application{
     anger.setOnAction(e -> {
 	AngerClass.start();		
 		});
+		
+	VBox buttons = new VBox(50);
+	buttons.getChildren().addAll(joy, sad, fear, disgust, anger);
+	Scene scene = new Scene(buttons, 600, 600);
+	window.setScene(scene);
+	window.show();
   }
   
 }
