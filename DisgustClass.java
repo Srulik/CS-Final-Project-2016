@@ -21,6 +21,7 @@ public class DisgustClass() extends Application{
     
     Button disgust = new Button("Wanna watch this video?");
     disgust.setOnAction( e -> /*https://www.youtube.com/watch?v=XM9pmmrKXKA*/);
+    a.getChildren().add(disgust);
     
     Button exit = new Button("EXIT");
     exit.setOnAction(e -> window.close());
