@@ -12,4 +12,23 @@ public class SadClass() extends Application{
     launch(args);
   }
   
+  public void start() throws Exception{
+    Stage window = new Stage();
+    window.setTitle("Sad...");
+    window.setWidth(300);
+    window.setHeight(400);
+    
+    Button sad = new Button("Wanna watch this video?");
+    disgust.setOnAction( e -> );
+    a.getChildren().add(sad);
+    
+    Button exit = new Button("EXIT");
+    exit.setOnAction(e -> window.close());
+    a.getChildren().add(exit);
+    
+    MediaPlayer play - new MediaPlayer()
+    
+    window.show();
+  }
+  
 }
