@@ -14,7 +14,7 @@ public class FearClass() extends Application{
   
   public void start(){
     Stage window = new Stage();
-    window.setTitle("Anger!");
+    window.setTitle("Sad...");
     window.setWidth(300);
     window.setHeight(400);
     
