@@ -30,15 +30,15 @@ public class AngerClass extends Game{
     VBox a = new VBox(50);
     
     Button anger = new Button("HIT ME I DARE YOU");
-    /*
+    
     anger.setOnAction( e -> numAng++ );
     a.getChildren().add(anger);
-    */
-    //if(numAng >= 100){
+  
+    if(numAng >= 100){
       Button exit = new Button("EXIT");
       exit.setOnAction(e -> window.close());
       a.getChildren().addAll(anger, exit);
-    //}
+    }
     
     Scene scene = new Scene(a, 600, 600);
     window.setScene(scene);
