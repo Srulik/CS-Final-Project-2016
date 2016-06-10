@@ -27,9 +27,14 @@ public class DisgustClass() extends Application{
     exit.setOnAction(e -> window.close());
     a.getChildren().add(exit);
     
-    MediaPlayer play - new MediaPlayer()
+    VBox a = new VBox(50);
+    a.getChildren.addAll(disgust, exit);
     
+    Scene scene = new Scene(a, 600,600);
+    window.setScene(scene);
     window.show();
+    
+   // MediaPlayer play - new MediaPlayer();
   }
 
 }
