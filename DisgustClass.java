@@ -1,40 +1,60 @@
+package net.mrpaul.ads.TM250.project;
+
+import java.io.File;
+
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.Slider;
+import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
 import javafx.stage.Stage;
-import javafx.scene.media;
 
-
-public class DisgustClass() extends Application{
-  public static void main(String[] args){
-    launch(args);
-  }
+public class DisgustClass extends Game{
   
-  public void start() throws Exception{
+  public void startDisgust(){
     Stage window = new Stage();
     window.setTitle("Disgust!");
-    window.setWidth(300);
-    window.setHeight(400);
+    window.setWidth(625);
+    window.setHeight(535);
+    
+    VBox a = new VBox(50);
+    
+    MediaPlayer mediaPlayer = new MediaPlayer(new Media(getClass().getResource("satisfyingVid.mp4").toExternalForm()));
+    MediaView mediaView = new MediaView(mediaPlayer);
+    
     
     Button disgust = new Button("Wanna watch this video?");
-    disgust.setOnAction( e -> /*https://www.youtube.com/watch?v=XM9pmmrKXKA*/);
+    disgust.setOnAction( e -> {mediaPlayer.play();
+    a.getChildren().add(mediaView);});
     a.getChildren().add(disgust);
     
     Button exit = new Button("EXIT");
-    exit.setOnAction(e -> window.close());
+    exit.setOnAction(e -> {
+    mediaPlayer.stop();
+    window.close();}
+    );
     a.getChildren().add(exit);
     
-    VBox a = new VBox(50);
-    a.getChildren.addAll(disgust, exit);
-    
+    a.setAlignment(Pos.CENTER);
     Scene scene = new Scene(a, 600,600);
     window.setScene(scene);
     window.show();
     
    // MediaPlayer play - new MediaPlayer();
   }
-
 }
