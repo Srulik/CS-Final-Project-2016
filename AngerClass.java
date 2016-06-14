@@ -1,3 +1,5 @@
+package net.mrpaul.ads.TM250.project;
+
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -19,27 +21,35 @@ import javafx.stage.Stage;
 
 
 public class AngerClass extends Game{
-  
+  static int numAng = 0;
   public static void startAnger(){
+	 numAng = 0;
     Stage window = new Stage();
     window.setTitle("Anger!");
     window.setWidth(300);
     window.setHeight(400);
-    int numAng = 0;
+    
     
     VBox a = new VBox(50);
     
     Button anger = new Button("HIT ME I DARE YOU");
-    
-    anger.setOnAction( e -> numAng++ );
+    Label label = new Label();
+    anger.setOnAction( e -> {
+    	label.setText("Number of Clicks: " + ++numAng);
+    	if(numAng == 100){
+    		Button exit = new Button("EXIT");
+    		exit.setOnAction(f -> window.close());
+    		a.getChildren().addAll(exit);
+    	}
+    });
+
     a.getChildren().add(anger);
-  
-    if(numAng >= 100){
-      Button exit = new Button("EXIT");
-      exit.setOnAction(e -> window.close());
-      a.getChildren().addAll(anger, exit);
-    }
     
+    
+    
+    
+    a.getChildren().addAll(label);
+    a.setAlignment(Pos.CENTER);
     Scene scene = new Scene(a, 600, 600);
     window.setScene(scene);
     window.show();
